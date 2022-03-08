@@ -32,7 +32,8 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ErrorMessage="Enter Fullname" ControlToValidate="TextBox1" Display="Dynamic" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
-                    <asp:TextBox ID="TextBox2" runat="server" class="ggg" placeholder="E-MAIL"></asp:TextBox>
+                    <asp:TextBox ID="TextBox2" runat="server" class="ggg" placeholder="E-MAIL" 
+                        ontextchanged="TextBox2_TextChanged"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" 
                         ErrorMessage="Enter Email" ControlToValidate="TextBox2" Display="Dynamic" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
@@ -42,7 +43,8 @@
                         ErrorMessage="Enter Password" ControlToValidate="TextBox3" Display="Dynamic" 
                         ForeColor="Red"></asp:RequiredFieldValidator>
                     <asp:TextBox ID="TextBox4" runat="server" class="ggg" 
-                        placeholder="CONFIRM PASSWORD" TextMode="Password"></asp:TextBox>
+                        placeholder="CONFIRM PASSWORD" TextMode="Password" 
+                        ontextchanged="TextBox4_TextChanged"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
                         ErrorMessage="Enter Confirm Password" ControlToValidate="TextBox4" 
                         Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>

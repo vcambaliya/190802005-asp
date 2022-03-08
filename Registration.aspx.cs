@@ -40,4 +40,12 @@ public partial class Registration : System.Web.UI.Page
         }
         
     }
+    protected void TextBox4_TextChanged(object sender, EventArgs e)
+    {
+
+    }
+    protected void TextBox2_TextChanged(object sender, EventArgs e)
+    {
+
+    }
 }
