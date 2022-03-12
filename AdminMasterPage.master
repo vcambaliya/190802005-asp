@@ -274,6 +274,12 @@
                         <li><a href="grids.html">Grids</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="ManageService.aspx">
+                        <i class="fa fa-user"></i>
+                        <span>Manage Service</span>
+                    </a>
+                </li>
                  <li>
                     <a href="ManageUser.aspx">
                         <i class="fa fa-user"></i>

@@ -17,7 +17,7 @@ public partial class Registration : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        SqlCommand cmd = new SqlCommand("INSERT INTO [userdata] ([fullname], [email], [password]) VALUES (@fullname, @email, @password)", con);
+        SqlCommand cmd = new SqlCommand("INSERT INTO [userdata1] ([fullname], [email], [password]) VALUES (@fullname, @email, @password)", con);
         cmd.Parameters.AddWithValue("@fullname", TextBox1.Text.Trim());
         cmd.Parameters.AddWithValue("@email", TextBox2.Text.Trim());
         cmd.Parameters.AddWithValue("@password", TextBox3.Text.Trim());

@@ -1,247 +1,103 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ClientMasterPage.master" AutoEventWireup="true" CodeFile="Gallery.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
- <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+ <!-- banner -->
+      <div class="inner_page-banner">
+      </div>
+      <!--//banner -->
+      <!-- short -->
+      <div class="using-border py-3">
+         <div class="inner_breadcrumb  ml-4">
+            <ul class="short_ls">
+               <li>
+                  <a href="Home.aspx">Home</a>
+                  <span>/ /</span>
+               </li>
+               <li>Gallery</li>
+            </ul>
+         </div>
+      </div>
+      <!-- //short-->
+      <!--Gallery-->
+      <section class="gallery py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Our Gallery</h3>
+            <div class="row grid gallery-info">
+               <div class="col-lg-7 col-md-7 gallery-grids">
+                  <figure class="effect-steve">
+                     <img src="client_src/images/g1.jpg" alt="img15"/>
+                     <figcaption>
+                        <h2>Jeweler<span>Designs</span></h2>
+                        <p>Lorem ipsum dolor sit ips</p>
+                        <a href="client_src/images/g1.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        </a>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="col-lg-5 col-md-5 gallery-grids">
+                  <figure class="effect-steve">
+                     <img src="client_src/images/g2.jpg" alt="img15"/>
+                     <figcaption>
+                        <h2>Jeweler<span>Designs</span></h2>
+                        <p>Lorem ipsum dolor sit ips</p>
+                        <a href="client_src/images/g2.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        </a>
+                     </figcaption>
+                  </figure>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- End Top Search -->
-
-    <!-- Start All Title Box -->
-    <div class="all-title-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Services</h2>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="Home.aspx">Home</a></li>
-                        <li class="breadcrumb-item active">Services</li>
-                    </ul>
-                </div>
+            <div class="row grid gallery-info">
+               <div class="col-lg-6 col-md-6 gallery-grids">
+                  <figure class="effect-steve">
+                     <img src="client_src/images/g3.jpg" alt="img15"/>
+                     <figcaption>
+                        <h2>Jeweler<span>Designs</span></h2>
+                        <p>Lorem ipsum dolor sit ips</p>
+                        <a href="client_src/images/g3.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        </a>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="col-lg-6 col-md-6 gallery-grids">
+                  <figure class="effect-steve">
+                     <img src="client_src/images/g4.jpg" alt="img15"/>
+                     <figcaption>
+                        <h2>Jeweler<span>Designs</span></h2>
+                        <p>Lorem ipsum dolor sit ips</p>
+                        <a href="client_src/images/g4.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        </a>
+                     </figcaption>
+                  </figure>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- End All Title Box -->
-
-    <!-- Start Gallery  -->
-    <div class="products-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="title-all text-center">
-                        <h1>Our Gallery</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet lacus enim.</p>
-                    </div>
-                </div>
+            <div class="row grid gallery-info">
+               <div class="col-lg-5 col-md-5 gallery-grids">
+                  <figure class="effect-steve">
+                     <img src="client_src/images/g6.jpg" alt="img15"/>
+                     <figcaption>
+                        <h2>Jeweler<span>Designs</span></h2>
+                        <p>Lorem ipsum dolor sit ips</p>
+                        <a href="client_src/images/g6.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        </a>
+                     </figcaption>
+                  </figure>
+               </div>
+               <div class="col-lg-7 col-md-7 gallery-grids">
+                  <figure class="effect-steve">
+                     <img src="client_src/images/g7.jpg" alt="img15"/>
+                     <figcaption>
+                        <h2>Jeweler<span>Designs</span></h2>
+                        <p>Lorem ipsum dolor sit ips</p>
+                        <a href="client_src/images/g7.jpg" class="gallery-box" data-lightbox="example-set" data-title="">
+                        </a>
+                     </figcaption>
+                  </figure>
+               </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="special-menu text-center">
-                        <div class="button-group filter-button-group">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".bulbs">Bulbs</button>
-                            <button data-filter=".fruits">Fruits</button>
-							<button data-filter=".podded-vegetables">Podded vegetables</button>
-							<button data-filter=".root-and-tuberous">Root and tuberous</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row special-list">
-                <div class="col-lg-3 col-md-6 special-grid bulbs">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <div class="type-lb">
-                                <p class="sale">Sale</p>
-                            </div>
-                            <img src="client_src/images/gallery-img-01.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                                <a class="cart" href="#">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid fruits">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <img src="client_src/images/gallery-img-02.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid bulbs">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <img src="client_src/images/gallery-img-03.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid fruits">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">                            
-                            <img src="client_src/images/gallery-img-04.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>                                
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-				<div class="col-lg-3 col-md-6 special-grid bulbs">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <img src="client_src/images/gallery-img-05.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid fruits">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">                            
-                            <img src="client_src/images/gallery-img-06.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid podded-vegetables">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <img src="client_src/images/gallery-img-07.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid root-and-tuberous">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">                            
-                            <img src="client_src/images/gallery-img-08.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-				
-				<div class="col-lg-3 col-md-6 special-grid root-and-tuberous">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">                            
-                            <img src="client_src/images/gallery-img-09.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid podded-vegetables">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <img src="client_src/images/gallery-img-10.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid root-and-tuberous">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">                           
-                            <img src="client_src/images/gallery-img-11.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 special-grid podded-vegetables">
-                    <div class="products-single fix">
-                        <div class="box-img-hover">
-                            <img src="client_src/images/gallery-img-12.jpg" class="img-fluid" alt="Image">
-                            <div class="mask-icon">
-                                <ul>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                    <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Gallery  -->
-
+         </div>
+      </section>
+      <!--//Gallery-->
+      
     
 
 

@@ -19,7 +19,7 @@ public partial class Login : System.Web.UI.Page
     {
         try
         {
-            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [userdata] WHERE [email] = @email AND [password] = @password", con);
+            SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [userdata1] WHERE [email] = @email AND [password] = @password", con);
             cmd.Parameters.AddWithValue("@email", TextBox1.Text.Trim());
             cmd.Parameters.AddWithValue("@password", TextBox2.Text.Trim());
             con.Open();

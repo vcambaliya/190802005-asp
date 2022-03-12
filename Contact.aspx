@@ -2,97 +2,91 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <!-- Start Top Search -->
-    <div class="top-search">
-        <div class="container">
-            <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+   <!-- banner -->
+      <div class="inner_page-banner">
+      </div>
+      <!--//banner -->
+      <!-- short -->
+      <div class="using-border py-3">
+         <div class="inner_breadcrumb  ml-4">
+            <ul class="short_ls">
+               <li>
+                  <a href="Home.aspx">Home</a>
+                  <span>/ /</span>
+               </li>
+               <li>Contact</li>
+            </ul>
+         </div>
+      </div>
+      <!-- //short-->
+      <!--contact -->
+      <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
+         <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+            <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">Contact US</h3>
+            <div class="row agile-info-para">
+               <!--contact-map -->
+               <div class="col-lg-6 address_mail_footer_grids">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.812628729253!2d153.014155!3d-27.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne+St%2C+South+Brisbane+QLD+4101%2C+Australia!5e0!3m2!1sen!2sin!4v1492257477691"></iframe>
+               </div>
+               <!--//contact-map -->
+               <!--contact-form-->
+               <div class="col-lg-6 contact-form ">
+                  <div class=" row mb-lg-4 mb-3">
+                     <div class="col-lg-7 col-md-6 col-sm-6 contact-list-grid">
+                        <h4> Get In Touch </h4>
+                        <div class="footer_grid_left">
+                           <ul>
+                              <li>
+                                 <span class="fas fa-map-marker"> </span>
+                                 <p>3481 Melrose Place, Beverly Hills
+                              </li>
+                              <li>
+                                 <span class="fas fa-envelope"> </span>
+                                 <p ><a href="mailto:info@example.com">info@example1.com</a> 
+                                 </p>
+                              </li>
+                              <li>
+                                 <span class="fas fa-fax"></span>
+                                 <p>(000)1122333</p>
+                              </li>
+                              <li>
+                                 <span class="fas fa-phone-volume"> </span>
+                                 <p>+(000) 123 4565 32</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="col-lg-5 col-md-6 col-sm-6 contact-list-grid">
+                        <h4>About Us </h4>
+                        <div class="contact-about">
+                           <p>incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor</p>
+                        </div>
+                     </div>
+                  </div>
+                  <form action="#" method="post">
+                     <div class=" agile-wls-contact-mid">
+                        <div class="form-group contact-forms">
+                           <input type="text" class="form-control" placeholder="Name" required="" >
+                        </div>
+                        <div class="form-group contact-forms">
+                           <input type="email" class="form-control" placeholder="Email" required="">
+                        </div>
+                        <div class="form-group contact-forms">
+                           <input type="text" class="form-control" placeholder="Phone" required="">
+                        </div>
+                        <div class="form-group contact-forms">
+                           <textarea class="form-control" rows="3" placeholder="Message" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block sent-butnn">Submit</button>
+                     </div>
+                  </form>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- End Top Search -->
-
-    <!-- Start All Title Box -->
-    <div class="all-title-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact Us</h2>
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="Home.aspx">Home</a></li>
-                        <li class="breadcrumb-item active"> Contact Us </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End All Title Box -->
-
-    <!-- Start Contact Us  -->
-    <div class="contact-box-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-sm-12">
-                    <div class="contact-form-right">
-                        <h2>GET IN TOUCH</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed odio justo, ultrices ac nisl sed, lobortis porta elit. Fusce in metus ac ex venenatis ultricies at cursus mauris.</p>
-                        <form id="contactForm">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" name="name" placeholder="Subject" required data-error="Please enter your Subject">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="submit-button text-center">
-                                        <button class="btn hvr-hover" id="submit" type="submit">Send Message</button>
-                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-				<div class="col-lg-4 col-sm-12">
-                    <div class="contact-info-left">
-                        <h2>CONTACT INFO</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent urna diam, maximus ut ullamcorper quis, placerat id eros. Duis semper justo sed condimentum rutrum. Nunc tristique purus turpis. Maecenas vulputate. </p>
-                        <ul>
-                            <li>
-                                <p><i class="fas fa-map-marker-alt"></i>Address: Michael I. Days 9000 <br>Preston Street Wichita,<br> KS 87213 </p>
-                            </li>
-                            <li>
-                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+1-888 705 770</a></p>
-                            </li>
-                            <li>
-                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">contactinfo@gmail.com</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Cart -->
-</asp:Content>
+            <!--//contact-map -->
+         </div>
+      </section>
+      <!--//contact  -->
+      
+      
+      </asp:Content>
 
