@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" EnableEventValidation="false" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="ManageUser.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <!--main content start-->
-<section id="main-content">
+  
 	<section class="wrapper">
 	<div class="form-w3layouts">
         <!-- page start-->

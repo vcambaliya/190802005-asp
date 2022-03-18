@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="ManageService.aspx.cs" Inherits="Default2" EnableEventValidation="false"%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="ManageProducts.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -10,18 +10,26 @@
             <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            Manage Service
+                            Manage Products
                         </header>
                         <div class="panel-body">
                             <div class="position-center">
                                 <div class="form-group">
-                                    <label for="exampleInputFullName">Title</label>
+                                    <label for="exampleInputFullName">Product Name</label>
                                     <asp:TextBox ID="TextBox1" runat="server" class="form-control"  placeholder="Enter Title"></asp:TextBox>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputFullName">Category</label>
+                                    <asp:DropDownList ID="DropDownList1" runat="server" class="form-control"  placeholder="Select Category"></asp:DropDownList>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Discription</label>
                                    <asp:TextBox ID="TextBox2" runat="server" class="form-control"  
                                         placeholder="Enter Discription" Rows="5" TextMode="MultiLine"></asp:TextBox>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Image</label>       
+                                    <asp:FileUpload ID="FileUpload1" runat="server" class="form-control"  ></asp:FileUpload>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Status</label>
@@ -33,56 +41,59 @@
                                    
                                 </div>
                                 
-                                <asp:Button ID="Button3" runat="server" Text="Submit" class="btn btn-info" 
-                                    onclick="Button3_Click"></asp:Button>
+                                <asp:Button ID="Button3" runat="server" Text="Submit" class="btn btn-info" onclick="Button3_Click" 
+                                    ></asp:Button>
                                 
                                 <div class="form-group">
                                     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
-                                        BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" 
-                                        CellPadding="3">
+                                        HorizontalAlign="Center">
                                         <Columns>
-                                            <asp:TemplateField HeaderText="id">
+                                            <asp:TemplateField HeaderText="Id">
                                                 <ItemTemplate>
                                                     <asp:Literal ID="Literal2" runat="server" Text='<%# Eval("id") %>'></asp:Literal>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
-                                            <asp:TemplateField HeaderText="Title">
+                                            <asp:TemplateField HeaderText="Product_Name">
                                                 <ItemTemplate>
-                                                    <asp:Literal ID="Literal3" runat="server" Text='<%# Eval("title") %>'></asp:Literal>
+                                                    <asp:Literal ID="Literal3" runat="server" Text='<%# Eval("ProductName") %>'></asp:Literal>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                            <asp:TemplateField HeaderText="Category">
+                                                <ItemTemplate>
+                                                    <asp:Literal ID="Literal4" runat="server" Text='<%# Eval("Category_Name") %>'></asp:Literal>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Discription">
                                                 <ItemTemplate>
-                                                    <asp:Literal ID="Literal4" runat="server" Text='<%# Eval("discription") %>'></asp:Literal>
+                                                    <asp:Literal ID="Literal5" runat="server" Text='<%# Eval("Discription") %>'></asp:Literal>
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                            <asp:TemplateField HeaderText="Image">
+                                                <ItemTemplate>
+                                                    <asp:Image ID="Image1" runat="server" Height="100px" 
+                                                        ImageUrl='<%# Eval("image","~/Uploads/{0}") %>' Width="100px" />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Status">
                                                 <ItemTemplate>
-                                                    <asp:Literal ID="Literal5" runat="server" Text='<%# Eval("status") %>'></asp:Literal>
-                                                </ItemTemplate>
-                                            </asp:TemplateField>
-                                            <asp:TemplateField HeaderText="Delete">
-                                                <ItemTemplate>
-                                                    <asp:Button ID="Button4" runat="server" CommandArgument='<%# Eval("id") %>' 
-                                                        onclick="Button4_Click" Text="Delete" />
+                                                    <asp:Literal ID="Literal6" runat="server" Text='<%# Eval("Status") %>'></asp:Literal>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Edit">
                                                 <ItemTemplate>
+                                                    <asp:Button ID="Button4" runat="server" CommandArgument='<%# Eval("id") %>' 
+                                                        Text="Button" />
+                                                </ItemTemplate>
+                                            </asp:TemplateField>
+                                            <asp:TemplateField HeaderText="Delete">
+                                                <ItemTemplate>
                                                     <asp:Button ID="Button5" runat="server" CommandArgument='<%# Eval("id") %>' 
-                                                        onclick="Button5_Click" Text="Edit" />
+                                                        Text="Delete" />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                         </Columns>
-                                        <FooterStyle BackColor="White" ForeColor="#000066" />
-                                        <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
-                                        <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
-                                        <RowStyle ForeColor="#000066" />
-                                        <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
-                                        <SortedAscendingCellStyle BackColor="#F1F1F1" />
-                                        <SortedAscendingHeaderStyle BackColor="#007DBB" />
-                                        <SortedDescendingCellStyle BackColor="#CAC9C9" />
-                                        <SortedDescendingHeaderStyle BackColor="#00547E" />
+                                        <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        <RowStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                     </asp:GridView>
                                            
                                 </div>
